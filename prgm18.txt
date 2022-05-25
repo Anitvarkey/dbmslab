@@ -1,0 +1,161 @@
+> use movie
+switched to db movie
+> db
+movie
+> db.createCollection("moviedetails")
+{ "ok" : 0, "errmsg" : "collection already exists", "code" : 48 }
+> db.createCollection("moviedetail")
+{ "ok" : 1 }
+> show collections
+moviedetail
+moviedetails
+system.indexes
+> db.moviedetail.insert({title:"fight club",writer:"chuck palahniuk",year:"1999",actors:["Brad pitt"
+,"edward norton"]})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetail.insert({title:"pulp fiction",writer:"quentin tarantino",year:"1994",actors:["john t
+ravalto","uma thirman"]})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetail.insert({title:"inglorious basterds",writer:"quentin tarantino",year:"2009",actors:[
+"bradd pitt","diane kurger"]})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetail.insert({title:"The hobbit:an unexpected journey",writer:"j.r.rtolkein",year:"2012",
+franchise:"The hobbit"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetail.insert({title:"The hobbit:The Desolution of smaug",writer:"j.r.rtolkein",year:"2013
+",franchise:"The hobbit"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetail.insert({title:"The hobbit:The Battle of the five armies",writer:"j.r.rtolkein",year
+:"2012",franchise:"The hobbit",synopsis:"Bilbo and company are forced to engage in a war against an
+array of combatants and keep the lonely mountain from falling into the hands of a rising darkness"})
+
+WriteResult({ "nInserted" : 1 })
+> db.moviedetail.insert({title:"Pee Wee Hermans Big Adventure"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetail.insert({title:"Avatar"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetail.find().pretty()
+{
+        "_id" : ObjectId("628c612cf524a1ddd62aae80"),
+        "title" : "fight club",
+        "writer" : "chuck palahniuk",
+        "year" : "1999",
+        "actors" : [
+                "Brad pitt",
+                "edward norton"
+        ]
+}
+{
+        "_id" : ObjectId("628c6199f524a1ddd62aae81"),
+        "title" : "pulp fiction",
+        "writer" : "quentin tarantino",
+        "year" : "1994",
+        "actors" : [
+                "john travalto",
+                "uma thirman"
+        ]
+}
+{
+        "_id" : ObjectId("628c61ebf524a1ddd62aae82"),
+        "title" : "inglorious basterds",
+        "writer" : "quentin tarantino",
+        "year" : "2009",
+        "actors" : [
+                "bradd pitt",
+                "diane kurger"
+        ]
+}
+{
+        "_id" : ObjectId("628c62b5f524a1ddd62aae83"),
+        "title" : "The hobbit:an unexpected journey",
+        "writer" : "j.r.rtolkein",
+        "year" : "2012",
+        "franchise" : "The hobbit"
+}
+{
+        "_id" : ObjectId("628c6374f524a1ddd62aae84"),
+        "title" : "The hobbit:The Desolution of smaug",
+        "writer" : "j.r.rtolkein",
+        "year" : "2013",
+        "franchise" : "The hobbit"
+}
+{
+        "_id" : ObjectId("628c642df524a1ddd62aae85"),
+        "title" : "The hobbit:The Battle of the five armies",
+        "writer" : "j.r.rtolkein",
+        "year" : "2012",
+        "franchise" : "The hobbit",
+        "synopsis" : "Bilbo and company are forced to engage in a war against an array of combatants
+ and keep the lonely mountain from falling into the hands of a rising darkness"
+}
+{
+        "_id" : ObjectId("628c64d8f524a1ddd62aae86"),
+        "title" : "Pee Wee Hermans Big Adventure"
+}
+{ "_id" : ObjectId("628c64f1f524a1ddd62aae87"), "title" : "Avatar" }
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

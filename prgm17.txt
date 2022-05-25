@@ -1,0 +1,140 @@
+> use employee
+switched to db employee
+> db.empl.insert({empno:"101",name:"Anit",salary:"1000",role:"manager"})
+WriteResult({ "nInserted" : 1 })
+> db.empl.insert({empno:"102",name:"Aleena",salary:"2000",role:"HR"})
+WriteResult({ "nInserted" : 1 })
+> db.empl.insert({empno:"103",name:"Aswanth",salary:"10101",role:"technical"})
+WriteResult({ "nInserted" : 1 })
+> db.empl.insert({empno:"104",name:"varkey",salary:"2020",role:"Developer"})
+WriteResult({ "nInserted" : 1 })
+> db.empl.find().pretty()
+{
+        "_id" : ObjectId("62833ad3d48c82b42b00e5a1"),
+        "empno" : 101,
+        "name" : "hcn",
+        "salary" : 10000,
+        "role" : "manager"
+}
+{
+        "_id" : ObjectId("62833b19d48c82b42b00e5a2"),
+        "empno" : 102,
+        "name" : "amy",
+        "salary" : 20000,
+        "role" : "salesman"
+}
+{
+        "_id" : ObjectId("62833b2cd48c82b42b00e5a3"),
+        "empno" : 103,
+        "name" : "airin",
+        "salary" : 20000,
+        "role" : "salesman"
+}
+{
+        "_id" : ObjectId("62833b3bd48c82b42b00e5a4"),
+        "empno" : 104,
+        "name" : "kail",
+        "salary" : 20000,
+        "role" : "salesman"
+}
+{
+        "_id" : ObjectId("62833b73d48c82b42b00e5a5"),
+        "empno" : 105,
+        "name" : "kail",
+        "salary" : 20000,
+        "role" : "salesman"
+}
+{
+        "_id" : ObjectId("62833c56d48c82b42b00e5a6"),
+        "empno" : 106,
+        "name" : "ajay",
+        "salary" : 80000,
+        "role" : "gm"
+}
+{
+        "_id" : ObjectId("62833d19d48c82b42b00e5a7"),
+        "empno" : 107,
+        "name" : "jojo",
+        "salary" : 25000,
+        "role" : "security"
+}
+{
+        "_id" : ObjectId("62833d34d48c82b42b00e5a8"),
+        "empno" : 107,
+        "name" : "joji",
+        "salary" : 20000,
+        "role" : "salesman"
+}
+{
+        "_id" : ObjectId("62833d40d48c82b42b00e5a9"),
+        "empno" : 108,
+        "name" : "jiya",
+        "salary" : 20000,
+        "role" : "salesman"
+}
+{
+        "_id" : ObjectId("62833d4ed48c82b42b00e5aa"),
+        "empno" : 109,
+        "name" : "jam",
+        "salary" : 20000,
+        "role" : "salesman"
+}
+{
+        "_id" : ObjectId("62833d62d48c82b42b00e5ab"),
+        "empno" : 110,
+        "name" : "vansh",
+        "salary" : 20000,
+        "role" : "salesman"
+}
+{
+        "_id" : ObjectId("628c5d4af524a1ddd62aae7c"),
+        "empno" : "101",
+        "name" : "Anit",
+        "salary" : "1000",
+        "role" : "manager"
+}
+{
+        "_id" : ObjectId("628c5d79f524a1ddd62aae7d"),
+        "empno" : "102",
+        "name" : "Aleena",
+        "salary" : "2000",
+        "role" : "HR"
+}
+{
+        "_id" : ObjectId("628c5dc6f524a1ddd62aae7e"),
+        "empno" : "103",
+        "name" : "Aswanth",
+        "salary" : "10101",
+        "role" : "technical"
+}
+{
+        "_id" : ObjectId("628c5dfdf524a1ddd62aae7f"),
+        "empno" : "104",
+        "name" : "varkey",
+        "salary" : "2020",
+        "role" : "Developer"
+}
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

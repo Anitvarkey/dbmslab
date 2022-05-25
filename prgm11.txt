@@ -1,0 +1,22 @@
+SQL> connect
+Enter user-name: system
+Enter password:
+Connected.
+SQL> set serveroutput on
+SQL> declare
+  2    a integer:=5;
+  3    b integer:=3;
+  4    c integer;
+  5  begin
+  6    c:=a+b;
+  7    dbms_output.put_line(chr(10)||a||'+'||b||'='||c);
+  8  end;
+  9  /
+
+5+3=8
+
+PL/SQL procedure successfully completed.
+
+SQL>
+
+
