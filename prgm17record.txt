@@ -1,0 +1,47 @@
+create or replace trigger display_salary_changes 
+before delete or insert or update on customers 
+for each row
+when(new.id>0)
+Declare
+  sal_diff number;
+Begin
+   sal_diff:=:new.salary-:old.salary;
+   dbms_output.put_line('old salary='||:old.salary);
+   dbms_output.put_line('new salary='||:new.salary);
+   dbms_output.put_line('Salary difference:'||sal_diff);
+End;
+/
+
+Trigger Created
+
+Declare
+     total_rows number(20);
+Begin
+     update customers set salary=salary+50000;
+     if sql%notfound then
+        dbms_output.put_line('no customers updated');
+     elsif sql%found then
+         total_rows:=sql%rowcount;
+         dbms_output.put_line(total_rows||'customers updated');
+     end if;
+end;
+/
+
+old salary=22000
+new salary=72000
+Salary difference:50000
+old salary=24000
+new salary=74000
+Salary difference:50000
+old salary=24000
+new salary=74000
+Salary difference:50000
+old salary=28000
+new salary=78000
+Salary difference:50000
+old salary=30000
+new salary=80000
+Salary difference:50000
+5customers updated
+
+PL/SQL procedure successfully completed.
